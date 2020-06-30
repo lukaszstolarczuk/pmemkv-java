@@ -5,6 +5,7 @@ package io.pmem.pmemkv;
 
 import io.pmem.pmemkv.DatabaseException;
 
+@SuppressWarnings("serial")
 public class ConfigParsingErrorException extends DatabaseException {
 
     public ConfigParsingErrorException(String message) {

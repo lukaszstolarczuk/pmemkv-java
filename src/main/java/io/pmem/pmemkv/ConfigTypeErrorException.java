@@ -3,6 +3,7 @@
 
 package io.pmem.pmemkv;
 
+@SuppressWarnings("serial")
 public class ConfigTypeErrorException extends DatabaseException {
 
     public ConfigTypeErrorException(String message) {

@@ -3,6 +3,7 @@
 
 package io.pmem.pmemkv;
 
+@SuppressWarnings("serial")
 public class UnknownErrorException extends DatabaseException {
 
     public UnknownErrorException(String message) {
