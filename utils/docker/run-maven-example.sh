@@ -16,11 +16,11 @@ echo
 echo "#############################################################"
 echo "### Apply patch (to use pmemkv from maven) and build examples"
 echo "#############################################################"
-cd ${WORKDIR}
-git apply utils/docker/0001-examples-use-pmemkv-from-maven-repo.patch
+cd ${WORKDIR}/examples
 
-cd examples
-mvn package -e ${PMEMKV_MVN_PARAMS}
+# pmemkv package in maven repository has a bit different name
+# and there may be different version available.
+mvn package -Dpmemkv.packageName=pmemkv-root -Dpmemkv.packageVersion=1.0.1 -e ${PMEMKV_MVN_PARAMS}
 
 echo
 echo "#############################################################"
