@@ -1,10 +1,6 @@
 
 name: pmemkv-java-maven
-# this job downloads pmemkv from maven and tries to run example with it
-on:
-  schedule:
-    # run this job at 00:00 UTC every Monday
-    - cron:  '0 0 * * 1'
+on: [push, pull_request]
 
 env:
   REPO:           pmemkv-java
