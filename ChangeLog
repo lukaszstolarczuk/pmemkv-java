@@ -1,6 +1,6 @@
 XXX XXX XX 2021 Igor Chorążewicz <igor.chorazewicz@intel.com>
 
-	* Version 1.2.0
+	* Version 1.1.1
 
 	Improvements:
 	- add new Builder methods to read config params from JSON objects
